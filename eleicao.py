@@ -32,3 +32,4 @@ while data:
     sleep(1)
     os.system("cls")
 
+# código para futuros estudos em Json e API
