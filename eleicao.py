@@ -1,3 +1,4 @@
+from numpy import linspace
 import requests
 import json
 import pandas as pd
@@ -22,7 +23,8 @@ for infos in json_data['cand']:
 
 df_eleicao = pd.DataFrame(
         list(zip(candidato, votos, porcentagem)),
-        columns=['Candidato', 'Nº votos', 'Porcentagem']
+        columns=['| Candidato |', '| Nº votos| ', '| Porcentagem |']
+       
 )
 
 while data:
